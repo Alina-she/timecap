@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Time Capsule Box</title>
+        <link rel="stylesheet" href="box.css"> <!-- Link to your CSS file -->
+    </head>
+<body>
+
+    <!-- Time Capsule Container -->
+    <section class="capsule-container">
+        <h2>Create Your Time Capsule</h2>
+        
+        <!-- Capsule Content Box -->
+        <div class="capsule-box">
+            <div class="add-content">
+                <button class="btn" id="addImageBtn">Add Image</button>
+                <button class="btn" id="addVoiceBtn">Add Voice Note</button>
+                <textarea id="textContent" placeholder="Write your message here..."></textarea>
+            </div>
+
+            <!-- Set Time & Recipient -->
+            <div class="settings">
+                <div class="time-settings">
+                    <label for="unlockDate">Set Unlock Time:</label>
+                    <input type="datetime-local" id="unlockDate" required>
+                </div>
+
+                <div class="recipient-settings">
+                    <label for="recipientEmail">Recipient's Email:</label>
+                    <input type="email" id="recipientEmail" placeholder="Recipient Email" required>
+                </div>
+
+                <button class="btn" id="saveCapsuleBtn">Save Time Capsule</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript File -->
+    <script src="capsule.js"></script>
+    <script src="box.js"></script> <!-- Link to your JS file -->
+</body>
+
+</body>
+</html>
